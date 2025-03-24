@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MediaHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/auth.js" defer></script>
+    <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MediaHub</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#" id="logout-button">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="dashboard-welcome">
+            <h2>Welcome, <span id="user-name">User</span>!</h2>
+            <p>This is your personal dashboard where you can manage your content and settings.</p>
+        </section>
+
+        <section class="dashboard-stats">
+            <div class="stat-cards">
+                <div class="stat-card">
+                    <h3>My Blogs</h3>
+                    <div class="stat-number">5</div>
+                </div>
+                <div class="stat-card">
+                    <h3>My Videos</h3>
+                    <div class="stat-number">3</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Comments</h3>
+                    <div class="stat-number">12</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Favorites</h3>
+                    <div class="stat-number">8</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard-content">
+            <h2 class="section-title">Your Recent Content</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="content-img">Blog 1</div>
+                    <div class="content-info">
+                        <h3>My First Blog Post</h3>
+                        <p>This is a sample blog post for your dashboard.</p>
+                        <div class="content-actions">
+                            <a href="#" class="btn-text">Edit</a>
+                            <a href="#" class="btn-text">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="content-img">Video 1</div>
+                    <div class="content-info">
+                        <h3>My First Video</h3>
+                        <p>This is a sample video for your dashboard.</p>
+                        <div class="content-actions">
+                            <a href="#" class="btn-text">Edit</a>
+                            <a href="#" class="btn-text">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>MediaHub</h2>
+                    <p>Your content platform for blogs and videos</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MediaHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
